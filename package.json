@@ -1,29 +1,29 @@
 {
-    "name": "protecc-server",
-    "version": "0.3.24",
-    "description": "",
-    "main": "server.js",
-    "scripts": {
-        "build-prod": "docker build -f Dockerfile.prod -t docker.dsys32.com/protecc-prod:latest -t docker.dsys32.com/protecc-prod:v${npm_package_version} .",
-        "build-dev": "docker build -f Dockerfile.dev -t docker.dsys32.com/protecc-dev:latest -t docker.dsys32.com/protecc-dev:v${npm_package_version} .",
-        "start-prod": "NODE_ENV=production node server.js",
-        "start-dev": "NODE_ENV=development node server.js"
-    },
-    "author": "Terrance Li, Andrew Liu, and Nathan Yan",
-    "license": "Copyright 2018 Terrance Li, Andrew Liu, and Nathan Yan",
-    "dependencies": {
-        "aws-sdk": "^2.279.1",
-        "base64-img": "^1.0.4",
-        "bcryptjs": "^2.4.3",
-        "body-parser": "^1.18.2",
-        "compression": "^1.7.2",
-        "connect-mongo": "^2.0.1",
-        "express": "^4.16.2",
-        "express-session": "^1.15.6",
-        "hat": "^0.0.3",
-        "mongoose": "^4.13.9",
-        "node-fetch": "^2.1.2",
-        "request": "^2.83.0",
-        "socket.io": "^2.1.1"
-    }
+	"name": "protecc-server",
+	"version": "0.4.0",
+	"description": "",
+	"main": "server.js",
+	"scripts": {
+		"build-prod": "docker build -f Dockerfile.prod -t docker.dsys32.com/protecc-prod:latest -t docker.dsys32.com/protecc-prod:v${npm_package_version} .",
+		"build-dev": "docker build -f Dockerfile.dev -t docker.dsys32.com/protecc-dev:latest -t docker.dsys32.com/protecc-dev:v${npm_package_version} .",
+		"start-prod": "NODE_ENV=production node server.js",
+		"start-dev": "NODE_ENV=development node server.js"
+	},
+	"author": "Terrance Li, Andrew Liu, and Nathan Yan",
+	"license": "Copyright 2018 Terrance Li, Andrew Liu, and Nathan Yan",
+	"dependencies": {
+		"aws-sdk": "^2.279.1",
+		"base64-img": "^1.0.4",
+		"bcryptjs": "^2.4.3",
+		"body-parser": "^1.18.2",
+		"compression": "^1.7.2",
+		"connect-mongo": "^2.0.1",
+		"express": "^4.16.2",
+		"express-session": "^1.15.6",
+		"hat": "^0.0.3",
+		"mongoose": "^4.13.9",
+		"node-fetch": "^2.1.2",
+		"request": "^2.83.0",
+		"socket.io": "^2.1.1"
+	}
 }
