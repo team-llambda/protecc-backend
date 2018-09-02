@@ -1,0 +1,14 @@
+FROM node:latest
+
+WORKDIR /usr/src/app
+
+COPY package.json /usr/src/app
+
+# Install app dependencies
+RUN npm install
+
+COPY . /usr/src/app
+
+EXPOSE 3000
+
+CMD ["npm", "run-script", "start-dev"]
